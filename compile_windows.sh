@@ -4,6 +4,9 @@ CONFIGNAME=config
 INPUT=`gcc -dumpmachine`
 if [[ $INPUT == *"x86_64"* ]]; then
   CONFIGNAME=config64
+  echo "64-bit configuration detected."
+elif [[ $INPUT == *"i686"* ]]; then
+  echo "32-bit configuration detected."
 fi
 
 echo "Using config '"$CONFIGNAME"'."
