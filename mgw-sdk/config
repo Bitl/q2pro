@@ -22,8 +22,8 @@ CC=i686-w64-mingw32-gcc
 STRIP=i686-w64-mingw32-strip
 WINDRES=i686-w64-mingw32-windres
 
-INCLUDES=-I../q2pro-mgw-sdk/inc -DUSE_PACKETDUP=1
-LIBS=-L../q2pro-mgw-sdk/lib
+INCLUDES=-Imgw-sdk/inc -DUSE_PACKETDUP=1
+LIBS=-Lmgw-sdk/lib
 
 CURL_CFLAGS=-DCURL_STATICLIB
 CURL_LIBS=-lcurl -lcrypt32
