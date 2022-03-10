@@ -503,12 +503,12 @@ endif
 ### Targets ###
 
 ifdef CONFIG_WINDOWS
-    TARG_s := q2proded.exe
-    TARG_c := q2pro.exe
+    TARG_s := q2proded$(CPU).exe
+    TARG_c := q2pro$(CPU).exe
     TARG_g := game$(CPU).dll
 else
-    TARG_s := q2proded
-    TARG_c := q2pro
+    TARG_s := q2proded$(CPU)
+    TARG_c := q2pro$(CPU)
     TARG_g := game$(CPU).so
 endif
 
