@@ -81,6 +81,6 @@ Download the latest pre-built SDK archive from here:
 
     https://github.com/skullernet/q2pro-mgw-sdk/releases
 
-Extract it alongside Q2PRO source directory and copy `config` (or `config64`)
-file to `.config`, then change to Q2PRO source directory and type `make` or `make
-strip`.
+Run './compile.sh' and review your .config file. This file has been pre-configured for 
+MSYS2 on Windows. If you're running Linux or you're running a normal MinGW-w64 environment, 
+uncomment the values on STRIP and WINDRES under "Linux", and comment the values under "MSYS2".

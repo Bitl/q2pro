@@ -19,8 +19,16 @@ CPU=x86_64
 #SYS=Win64
 
 CC=x86_64-w64-mingw32-gcc
-STRIP=x86_64-w64-mingw32-strip
-WINDRES=x86_64-w64-mingw32-windres
+
+#Linux
+#STRIP=x86_64-w64-mingw32-strip
+#MSYS2
+STRIP=strip
+
+#Linux
+#WINDRES=x86_64-w64-mingw32-windres
+#MSYS2
+WINDRES=windres
 
 INCLUDES=-Imgw-sdk/inc -DUSE_PACKETDUP=1
 LIBS=-Lmgw-sdk/lib64
