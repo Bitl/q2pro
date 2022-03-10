@@ -1,5 +1,6 @@
 #!/bin/sh
 
+make clean
 CONFIGNAME=config
 INPUT=`gcc -dumpmachine`
 if [[ $INPUT == *"x86_64"* ]]; then

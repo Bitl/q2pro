@@ -16,7 +16,7 @@ CONFIG_WINDOWS_SERVICE=y
 #CONFIG_DEBUG=y
 
 CPU=x86
-SYS=Win32
+#SYS=Win32
 
 CC=i686-w64-mingw32-gcc
 STRIP=i686-w64-mingw32-strip
